@@ -4,8 +4,44 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "04378a785e765eab65554ca9b826b04c",
+    "content-hash": "d29b8c62b92d600278f2b374b541591b",
     "packages": [
+        {
+            "name": "acme/manager-tool",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./nova-components/ManagerTool",
+                "reference": "2a16a3b73b6f2c36a1185c2628916f05fcf1beb9"
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Acme\\ManagerTool\\ToolServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Acme\\ManagerTool\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova tool.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
         {
             "name": "brick/math",
             "version": "0.10.2",

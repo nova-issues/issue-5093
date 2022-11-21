@@ -2,7 +2,10 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
@@ -11,7 +14,8 @@
         "laravel/nova": "^4.0",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
-        "nova-kit/helpers": "^0.4.5"
+        "nova-kit/helpers": "^0.4.5",
+        "acme/manager-tool": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -69,6 +73,10 @@
         "nova": {
             "type": "composer",
             "url": "https://nova.laravel.com"
+        },
+        "0": {
+            "type": "path",
+            "url": "./nova-components/ManagerTool"
         }
     }
 }

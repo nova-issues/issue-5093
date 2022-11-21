@@ -2,7 +2,9 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "build-manager-tool": "cd nova-components/ManagerTool && npm run dev",
+        "build-manager-tool-prod": "cd nova-components/ManagerTool && npm run prod"
     },
     "devDependencies": {
         "axios": "^1.1.2",
